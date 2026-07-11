@@ -1,0 +1,38 @@
+{
+  "name": "how-to-scrape-property24",
+  "version": "1.0.0",
+  "description": "Extract property listings, asking prices, locations, bedrooms, bathrooms, floor sizes, real estate agencies, and WhatsApp agent contact links across 10 African countries from Property24.com. Download clean tables of property listings automatically for investment research.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "apify",
+    "apify-actor",
+    "web-scraping",
+    "data-extraction",
+    "real-estate",
+    "property-listings",
+    "lead-generation",
+    "property24",
+    "property24-scraper",
+    "property24-data",
+    "south-africa",
+    "namibia",
+    "kenya",
+    "botswana",
+    "zimbabwe",
+    "zambia",
+    "nigeria",
+    "tanzania",
+    "mozambique",
+    "africa"
+  ],
+  "author": "Devansh-365",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apify-client": "^2.12.0",
+    "dotenv": "^16.5.0"
+  }
+}

@@ -1,0 +1,55 @@
+# getascraper/how-to-scrape-property24
+
+> Property24 Scraper is an Apify Actor that extracts property listings, prices, locations, and agent contacts from Property24.com across African markets. Free tier available.
+
+## Overview
+- Property24 scraper and real estate listing data extraction API
+- Extracts: asking price, location and suburb, bedrooms and bathrooms, floor and plot size, agent and agency WhatsApp contacts
+- Output formats: JSON, CSV, Excel, XML, RSS
+- Free tier: included
+
+## Key Pages
+- README: https://github.com/getascraper/how-to-scrape-property24/blob/main/README.md
+- Apify Store: https://apify.com/getascraper/property24-scraper
+- Apify Console: https://console.apify.com/actors/getascraper~property24-scraper
+- Source Actor: https://github.com/getascraper/actorstack/tree/main/actors/property24-scraper
+
+## How it works
+1. Give the actor one or more locations, or paste your own Property24 search or listing URLs
+2. The actor collects matching property listings and normalizes each into a flat row
+3. Turn on deep scrape to add agent contacts, WhatsApp links, coordinates, and full property details
+
+## Target site characteristics
+- Publicly listed residential and commercial property data
+- Thousands of active listings across supported countries at any time
+- Covers African markets including South Africa, Namibia, Kenya, Botswana, Zimbabwe, Zambia, Nigeria, Tanzania, and Mozambique
+
+## API Usage
+- Node.js SDK: https://docs.apify.com/api/client/js
+- REST API: https://docs.apify.com/api/v2
+- MCP server: https://github.com/apify/apify-mcp-server
+
+## Supported target URLs
+- https://www.property24.com/for-sale/*
+- https://www.property24.com/to-rent/*
+- https://www.property24.com/recently-sold/*
+
+## Pricing
+- Free tier: included, first 50 results of every run
+- Paid: $0.69 per 1,000 results (Property listing and Enriched listing events, $0.00069 each)
+
+## Output schema (highlights)
+- price: Asking price as a clean number
+- bedrooms, bathrooms, floor_size, erf_size: core property metrics
+- agency_name, agent_name, agent_phone, whatsapp_link: agent contact details from deep scrape
+- suburb, city, province, country: location breakdown
+
+## Use cases
+- Property fund analysts tracking new listings in target suburbs
+- Real estate lead generators building agent contact lists
+- Relocation agents comparing rentals for clients
+- Data analysts building housing price models
+
+## Support
+- GitHub Issues: https://github.com/getascraper/how-to-scrape-property24/issues
+- Apify Console: https://console.apify.com/actors/getascraper~property24-scraper/issues
